@@ -32,7 +32,7 @@ console.log(userExpense)
 if (isNaN(userKm) && isNaN(userAge)) {
     alert('ATTENZIONE! Il valore deve essere un numero')
 } else {
-    alert('Valori registrati correttamente, premere "OK" per conoscere il prezzo del biglietto')
+    alert('Valori registrati correttamente, premi "OK" per conoscere il prezzo del tuo biglietto.')
 }
 
 if (userAge < 18) {

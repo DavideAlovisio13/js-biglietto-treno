@@ -36,15 +36,15 @@ if (isNaN(userKm) && isNaN(userAge)) {
 }
 
 if (userAge < 18) {
-    userExpense = price.toFixed(2) * 0.80;
+    userExpense = price * 0.80;
 } else if (userAge > 65) {
-    userExpense = price.toFixed(2) * 0.60;
+    userExpense = price * 0.60;
 } else {
-    userExpense = price.toFixed(2);
+    userExpense = price;
 }
 
 console.log('Il tuo biglietto ha un costo di',
     userExpense);
-document.getElementById('euro').innerHTML = userExpense;
+document.getElementById('euro').innerHTML = userExpense.toFixed(2);
 
 
